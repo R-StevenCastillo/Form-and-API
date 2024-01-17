@@ -1,5 +1,5 @@
 //JUST AN EXAMPLE
-import MONGODB_CREDENTIALS from './apikey';
+import MONGODB_CREDENTIALS from './credentials';
 // Importa la bilbioteca de mongoose para interactuar con MongoDB
 const mongoose = require('mongoose');
 
