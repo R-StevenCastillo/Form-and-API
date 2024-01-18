@@ -2,7 +2,7 @@
   "name": "short-form-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,13 +11,16 @@
     "url": "git+https://github.com/R-StevenCastillo/Short-Form-API.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Steven",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/R-StevenCastillo/Short-Form-API/issues"
   },
   "homepage": "https://github.com/R-StevenCastillo/Short-Form-API#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.1.0"
   }
 }

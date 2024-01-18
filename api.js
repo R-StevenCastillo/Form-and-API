@@ -3,12 +3,13 @@ const mongoose = require('mongoose');
 const user = require('./user.handler')
 const app = express()
 const port = 3000
-import MONGODB_CREDENTIALS from './credentials';
+require('dotenv').config()
+const mongoURI = process.env.MONGODB_CREDENTIALS;
 
 app.use(express.json())
 app.use(express.static((__dirname + '/app')))
 
-mongoose.connect(MONGODB_CREDENTIALS);
+mongoose.connect(mongoURI);
 
 app.get('/users/', user.list);
 app.post('/users/', user.create);
